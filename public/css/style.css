@@ -1,0 +1,122 @@
+body{
+    opacity: 1;
+}
+
+.btn-info {
+    background-color: #1b5f86;
+    border-color: #397da5;
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.hover {
+    background-color: #397da5;
+}
+
+.navbar-nav {
+    margin: 3.5px -15px -6px;
+}
+.navbar-static-top {
+    background-color: #397da5;
+}
+
+.navbar-top {
+    background-color: #1b5f86;
+}
+
+.alert.alert-success{
+    margin-bottom: 0px !important; 
+}
+.alert.alert-warning{
+    margin-bottom: 0px !important; 
+}
+
+.overlay-icons{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+.overlay-icons-body{
+	text-align: center;
+
+}
+
+.modal-content{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.modal-header {
+    background-color: #18a7cc;
+    color: #ffffff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.nav-tabs-custom > .nav-tabs > li {
+    border-top: 2px solid transparent;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #357194;
+    border-right-color: #357194;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-left-color: #357194;
+}
+
+.nav-tabs-custom > .nav-tabs {
+    margin: 0;
+    border-bottom-color: #357194;
+    border-bottom: 2px solid #357194;
+    border-bottom-style: solid;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.shortcut{
+    margin: 0 0 0 7px;
+    border: 1px solid #e6e6e6;
+    background: #2d6694;
+    color: #e6e6e6;
+    padding: 0 5px 0 5px;
+    border-radius: 2px;
+}
+.print{
+    padding: 0 10px 0 10px;
+}
+.payment-header{
+    margin: 0 0 10px;
+}
+.search-box{
+    background: #EEE;
+    padding-bottom: 10px;
+}
+/*invoice Register*/
+.invoice-reg{
+    background: #EEE;
+    padding: 10px 0;
+    margin-bottom: -10px;
+}
+.invoice-right{
+    background: #EEE;
+    text-align: center; 
+    padding: 7px 0;
+    margin-top: 15px;
+    box-shadow: 0 0 2px #003454;
+}
+
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+    background-color: #EEE;
+}
+.test-scan{
+    height: 70%;
+    background-color: #dcdcdc;
+    color: #073250;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.test-scan input{
+    height: 40px;
+}
