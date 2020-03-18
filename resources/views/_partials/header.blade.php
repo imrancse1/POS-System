@@ -2,7 +2,7 @@
     <nav class="navbar navbar-static-top" style="background-color:#2874a0">
       <div class="container">
         <div class="navbar-header">
-          <a href="{{URL::to('/')}}" class="navbar-brand"><b>E-</b>MS</a>
+          <a href="{{URL::to('/')}}" class="navbar-brand"><b>P-</b>OS</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -27,7 +27,7 @@
                       <a href="#">
                         <div class="pull-left">
                           <!-- User Image -->
-                          <img src="{{URL::to('public/assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+                          <img src="{{asset('/assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
                         </div>
                         <!-- Message title and timestamp -->
                         <h4>
@@ -50,14 +50,14 @@
               <!-- Menu Toggle Button -->
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <!-- The user image in the navbar-->
-                <img src="{{URL::to('public/assets/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
+                <img src="{{asset('/assets/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs">{{Auth::user()->name}}</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- The user image in the menu -->
                 <li class="user-header">
-                  <img src="{{URL::to('public/assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+                  <img src="{{asset('/assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
                   <p>
                     {{Auth::user()->name}}
                     <small>Member since Nov. 2019</small>
@@ -104,40 +104,54 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
 
+          
+
             <li class="active">
-              <a href="{{route('hr.user')}}" class="btn btn-app" style="margin-top:7px;">
-                <i class="fa fa-user-md"></i>
-                User
+              <a href="{{route('wirehouse')}}" class="btn btn-app" style="margin-top:7px;">
+                <i class="fa fa-user"></i>
+                Wirehouse
+              </a>
+            </li> 
+
+            <li class="active">
+              <a href="{{route('product')}}" class="btn btn-app" style="margin-top:7px;">
+                <i class="fa fa-user"></i>
+                Product
               </a>
             </li>
 
             <li class="active">
-              <a href="{{route('settings.setup')}}" class="btn btn-app" style="margin-top:7px;">
-                <i class="fa fa-gears"></i>
-                Setup
+              <a href="{{route('supplier')}}" class="btn btn-app" style="margin-top:7px;">
+                <i class="fa fa-user"></i>
+                Supplier
+              </a>
+            </li>
+
+             <li class="active">
+              <a href="{{route('vendor')}}" class="btn btn-app" style="margin-top:7px;">
+                <i class="fa fa-user"></i>
+                Vendor
               </a>
             </li>
 
             <li class="active">
-              <a href="{{route('hr.employee')}}" class="btn btn-app" style="margin-top:7px;">
-                <!-- <i class="fa fa-product-hunt"></i> -->
+              <a href="{{route('inventory')}}" class="btn btn-app" style="margin-top:7px;">
+                <i class="fa fa-user"></i>
+                Inventory
+              </a>
+            </li> 
+
+            <li class="active">
+              <a href="{{route('employee')}}" class="btn btn-app" style="margin-top:7px;">
                 <i class="fa fa-user"></i>
                 Employee
               </a>
             </li>
 
             <li class="active">
-              <a href="{{route('hr.employeeReports')}}" class="btn btn-app" style="margin-top:7px;">
-                <!-- <i class="fa fa-product-hunt"></i> -->
+              <a href="{{route('pos')}}" class="btn btn-app" style="margin-top:7px;">
                 <i class="fa fa-user"></i>
-                Reports
-              </a>
-            </li>
-
-            <li class="active">
-              <a href="{{route('test')}}" class="btn btn-app" style="margin-top:7px;">
-                <i class="fa fa-user"></i>
-                Test
+                POS
               </a>
             </li>
 

@@ -15,8 +15,15 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers';
-    protected $namespaceSettings = 'App\Http\Controllers\Settings';
-    protected $namespaceHR = 'App\Http\Controllers\HR';
+   
+    
+    protected $namespaceProduct = 'App\Http\Controllers\Product';
+    protected $namespaceWirehouse = 'App\Http\Controllers\Wirehouse';
+    protected $namespaceSupplier = 'App\Http\Controllers\Supplier';
+    protected $namespaceVendor = 'App\Http\Controllers\Vendor';
+    protected $namespaceInventory = 'App\Http\Controllers\Inventory';
+    protected $namespaceEmployee = 'App\Http\Controllers\Employee';
+    protected $namespacePos = 'App\Http\Controllers\Pos';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -61,13 +68,32 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace($this->namespace)
              ->group(base_path('routes/Routes.php'));     
 
-         Route::middleware('web')
-             ->namespace($this->namespaceSettings)
-             ->group(base_path('routes/settingsRoutes.php'));
                
+        
+
         Route::middleware('web')
-             ->namespace($this->namespaceHR)
-             ->group(base_path('routes/hrRoutes.php'));          
+             ->namespace($this->namespaceProduct)
+             ->group(base_path('routes/productRoutes.php'));
+
+        Route::middleware('web')
+             ->namespace($this->namespaceWirehouse)
+             ->group(base_path('routes/wirehouseRoutes.php'));   
+
+        Route::middleware('web')
+             ->namespace($this->namespaceSupplier)
+             ->group(base_path('routes/SupplierRoutes.php'));
+        Route::middleware('web')
+             ->namespace($this->namespaceVendor)
+             ->group(base_path('routes/VendorRoutes.php'));
+        Route::middleware('web')
+             ->namespace($this->namespaceInventory)
+             ->group(base_path('routes/InventoryRoutes.php'));
+        Route::middleware('web')
+             ->namespace($this->namespaceEmployee)
+             ->group(base_path('routes/EmployeeRoutes.php'));
+        Route::middleware('web')
+             ->namespace($this->namespacePos)
+             ->group(base_path('routes/PosRoutes.php'));               
     }
 
     /**
